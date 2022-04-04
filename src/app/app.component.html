@@ -1,0 +1,19 @@
+<div>App component</div>
+
+<!-- Use component with directive notation..  useful when handling css edge cases -->
+<div
+  app-demo
+  [title]="'Hello world' + '!!!'"
+  (parentClick)="handleClick($event)"
+>
+  <!-- Project the children to the app-demo component (similar to react children) -->
+  <h2>This is child</h2>
+
+  <span ref>Next child</span>
+</div>
+
+<!-- String interpolation syntax -->
+<h1>{{ title }}</h1>
+
+<hr />
+<app-demo2></app-demo2>

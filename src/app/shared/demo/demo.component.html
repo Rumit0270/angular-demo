@@ -1,0 +1,28 @@
+<p>demo works!</p>
+
+<h1>{{ title }}</h1>
+
+<button type="button" #myButton (click)="handleClick()">Send message</button>
+
+
+<button (click)="myButton.click()" >Second button</button>
+
+
+<button type="button" (click)="handleParentClick()">Call parent</button>
+
+<ng-content [select]="ref">
+
+</ng-content>
+
+<ul>
+    <ng-container *ngFor="let fruit of fruits">
+        <li >{{ fruit}}</li>
+    </ng-container>
+</ul>
+
+<hr>
+
+
+
+
+

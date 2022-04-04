@@ -1,0 +1,15 @@
+<div class="demo2">
+    <h1>{{ message }}</h1>
+</div>
+
+<div>
+    Numbers
+
+    <ul>
+        <li *ngFor="let num of numbers">
+            <span>{{ num }}</span>
+             -
+            <span>{{ multipleOf2(num) }}</span>
+        </li>
+    </ul>
+</div>

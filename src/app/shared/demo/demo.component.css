@@ -1,0 +1,7 @@
+h1 {
+    color: red;
+}
+
+:host {
+    border: 1px solid brown;
+}
